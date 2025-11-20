@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreejak Subedi - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/profile.jpg">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="profile-box">
+            <img src="images/profile.jpg" alt="Profile Photo">
+            <h1>Shreejak Subedi</h1>
+            <p class="tagline">Student • Biratnagar, Nepal</p>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm <strong>Shreejak Subedi</strong>, a passionate student from Biratnagar, Nepal. 
+            I enjoy learning web development and building small but creative projects. 
+            This is my first portfolio website, and I am continuously improving my skills.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Basic PHP</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <img src="images/project1.png" alt="Money Tracker App">
+            <h3>Money Tracker App</h3>
+            <p>A simple app to track given and received money.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project2.png" alt="Quiz Game">
+            <h3>Quiz Game</h3>
+            <p>A fun quiz application built using PHP, JS, and MySQL.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project3.png" alt="Weather App">
+            <h3>Weather App</h3>
+            <p>Weather application using OpenWeatherMap API.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Write your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © <span id="year"></span> Shreejak Subedi — All Rights Reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
