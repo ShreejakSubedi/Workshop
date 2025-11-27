@@ -6,89 +6,263 @@
     <title>Shreejak Subedi - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/profile.jpg">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <!-- HEADER -->
-    <header>
-        <div class="profile-box">
-            <img src="images/profile.jpg" alt="Profile Photo">
-            <h1>Shreejak Subedi</h1>
-            <p class="tagline">Student • Biratnagar, Nepal</p>
+    <header id="header" class="header">
+        <div class="container container-lg">
+            <div class="header-nav">
+                <a href="#home" class="logo">S.Subedi</a>
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-btn"><i class="fas fa-bars"></i></button>
+                </nav>
+            </div>
         </div>
     </header>
 
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container container-lg">
+            <div class="hero-row">
+                <div class="hero-content">
+                    <span class="hero-greeting">Hello, I am</span>
+                    <h1 class="hero-heading">Shreejak Subedi</h1>
+                    <span class="hero-heading-subtitle">Web Developer & Student</span>
+                    
+                    <!-- SOCIAL LINKS -->
+                    <div class="about-social-list">
+                        <div class="social-links-row">
+                            <a href="https://github.com/ShreejakSubedi" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/shreejak-subedi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/_shreejak" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com/shreejak.subedi" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">My Portfolio</a>
+                        <a href="#contact" class="btn btn-white">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="images/profile.jpg" alt="Shreejak Subedi">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ABOUT SECTION -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm <strong>Shreejak Subedi</strong>, a passionate student from Biratnagar, Nepal. 
-            I enjoy learning web development and building small but creative projects. 
-            This is my first portfolio website, and I am continuously improving my skills.
-        </p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="title">About Me</h2>
+            <div class="about-row">
+                <div class="about-content">
+                    <p>Hello! I'm <strong>Shreejak Subedi</strong>, a passionate student from Biratnagar, Nepal. I enjoy learning web development and building creative projects that solve real problems. When I'm not coding, I explore new tech and work on ideas that help improve digital experiences.</p>
+                    <a href="documents/cv.pdf" class="btn btn-white" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLEXBOX VS GRID SECTION -->
+    <section class="layout-section">
+        <div class="container">
+            <h2 class="title">Flexbox vs Grid</h2>
+            <div class="layout-content">
+                <p>
+                    <strong>Flexbox</strong> is used for one-dimensional layouts (row OR column), while <strong>Grid</strong> is used
+                    for two-dimensional layouts (rows AND columns). Flexbox is best for components and alignment,
+                    while Grid is best for page layout structure. In this website, Flexbox is used for layout 
+                    alignment such as navigation, hero section, and projects layout, while Grid is used for 
+                    the skills section and gallery layout.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Basic PHP</li>
-            <li>MySQL</li>
-        </ul>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-title">HTML/CSS</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar__progress">
+                        <div class="skill-bar__fill" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-title">JavaScript</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar__progress">
+                        <div class="skill-bar__fill" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-title">React</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar__progress">
+                        <div class="skill-bar__fill" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-title">Node.js</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar__progress">
+                        <div class="skill-bar__fill" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-title">UI/UX Design</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar__progress">
+                        <div class="skill-bar__fill" data-progress="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects">
-        <h2>My Projects</h2>
-
-        <div class="project-card">
-            <img src="images/project1.png" alt="Money Tracker App">
-            <h3>Money Tracker App</h3>
-            <p>A simple app to track given and received money.</p>
+    <section id="projects" class="projects">
+        <div class="container container-lg">
+            <h2 class="title">My Projects</h2>
+            <div class="projects-row">
+                <div class="project-box" data-link="https://shreejaksubedi.github.io/money-tracker">
+                    <img class="project-img" src="images/project1.png" alt="Money Tracker App">
+                    <div class="project-mask">
+                        <div class="project-caption">
+                            <h5>Money Tracker App</h5>
+                            <p>Personal Finance Management</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box" data-link="https://shreejaksubedi.github.io/quiz-game">
+                    <img class="project-img" src="images/project2.png" alt="Quiz Game">
+                    <div class="project-mask">
+                        <div class="project-caption">
+                            <h5>Quiz Game</h5>
+                            <p>Interactive Learning Platform</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box" data-link="https://shreejaksubedi.github.io/weather-app">
+                    <img class="project-img" src="images/project3.png" alt="Weather App">
+                    <div class="project-mask">
+                        <div class="project-caption">
+                            <h5>Weather App</h5>
+                            <p>Real-time Weather Updates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="images/project2.png" alt="Quiz Game">
-            <h3>Quiz Game</h3>
-            <p>A fun quiz application built using PHP, JS, and MySQL.</p>
+    <!-- GALLERY / SLIDER SECTION -->
+    <section id="gallery" class="slider-section">
+        <div class="container container-lg">
+            <h2 class="title">Gallery</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="images/project1.png" alt="Money Tracker App">
+                    </div>
+                    <div class="slide">
+                        <img src="images/project2.png" alt="Quiz Game">
+                    </div>
+                    <div class="slide">
+                        <img src="images/project3.png" alt="Weather App">
+                    </div>
+                </div>
+                <button class="slider-btn prev">◀</button>
+                <button class="slider-btn next">▶</button>
+                <div class="slider-dots"></div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="images/project3.png" alt="Weather App">
-            <h3>Weather App</h3>
-            <p>Weather application using OpenWeatherMap API.</p>
+    <!-- MEDIA SECTION -->
+    <section id="media" class="media">
+        <div class="container container-lg">
+            <h2 class="title">Media</h2>
+            <div class="media-content">
+                <video controls width="480">
+                    <source src="video/ron.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <audio controls>
+                    <source src="audio/aud.m4a" type="audio/mp4">
+                    Your browser does not support the audio element.
+                </audio>
+                <canvas id="myCanvas" width="300" height="120"></canvas>
+            </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Enter your name">
-
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="Enter your email">
-
-            <label for="message">Your Message</label>
-            <textarea id="message" placeholder="Write your message"></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="title">Contact Me</h2>
+            <p class="contact-subtitle">Have a project? Let's build it together.</p>
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
+    <!-- THEME TOGGLE -->
+    <button id="themeToggle">🌓</button>
+
+    <!-- BACK TO TOP -->
+    <div id="goToTop" class="goToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
     <!-- FOOTER -->
-    <footer>
-        © <span id="year"></span> Shreejak Subedi — All Rights Reserved.
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year">2025</span> Shreejak Subedi. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/ShreejakSubedi"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/_shreejak"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/shreejak-subedi"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
